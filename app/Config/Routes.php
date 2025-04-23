@@ -13,6 +13,7 @@ $routes->post('login', 'Auth::login');
 $routes->get('register', 'Auth::register');
 $routes->post('register_action', 'Auth::register_action');
 $routes->get('logout', 'Auth::logout');
+$routes->get('dashboard','Pertanggungan::dashboard');
 
 $routes->group('api', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->resource('jenis-barang', ['controller' => 'JenisBarangController']);
